@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B26A763A2DCA2A0500D127D9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B26A76392DCA2A0500D127D9 /* FirebaseAuth */; };
+		B26A763C2DCA2A0500D127D9 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = B26A763B2DCA2A0500D127D9 /* FirebaseCore */; };
+		B26A763E2DCA2A0500D127D9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B26A763D2DCA2A0500D127D9 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B26A75E22DCA28A700D127D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B26A763C2DCA2A0500D127D9 /* FirebaseCore in Frameworks */,
+				B26A763A2DCA2A0500D127D9 /* FirebaseAuth in Frameworks */,
+				B26A763E2DCA2A0500D127D9 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +134,9 @@
 			);
 			name = NewsApp;
 			packageProductDependencies = (
+				B26A76392DCA2A0500D127D9 /* FirebaseAuth */,
+				B26A763B2DCA2A0500D127D9 /* FirebaseCore */,
+				B26A763D2DCA2A0500D127D9 /* FirebaseFirestore */,
 			);
 			productName = NewsApp;
 			productReference = B26A75CB2DCA28A500D127D9 /* NewsApp.app */;
@@ -208,6 +220,9 @@
 			);
 			mainGroup = B26A75C22DCA28A500D127D9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B26A76382DCA2A0500D127D9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B26A75CC2DCA28A500D127D9 /* Products */;
 			projectDirPath = "";
@@ -293,7 +308,6 @@
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +334,6 @@
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -563,6 +576,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B26A76382DCA2A0500D127D9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B26A76392DCA2A0500D127D9 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B26A76382DCA2A0500D127D9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B26A763B2DCA2A0500D127D9 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B26A76382DCA2A0500D127D9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		B26A763D2DCA2A0500D127D9 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B26A76382DCA2A0500D127D9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B26A75C32DCA28A500D127D9 /* Project object */;
 }

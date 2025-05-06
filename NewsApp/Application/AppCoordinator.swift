@@ -15,7 +15,11 @@ class AppCoordinator: Coordinator {
     }
     
     func start() {
-        showMainFlow()
+        if isUserLoggedIn() {
+            showMainFlow()
+        } else {
+            showAuthFlow()
+        }
         window.makeKeyAndVisible()
     }
     

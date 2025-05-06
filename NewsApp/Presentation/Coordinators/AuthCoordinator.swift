@@ -28,8 +28,6 @@ class AuthCoordinator: Coordinator {
     }
     
     func showRegister() {
-        print("Current rootViewController: \(String(describing: type(of: window.rootViewController)))")
-        
         var navigationController: UINavigationController?
         
         if let navController = window.rootViewController as? UINavigationController {
